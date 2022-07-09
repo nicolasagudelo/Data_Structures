@@ -10,6 +10,8 @@ class Stack():
     def peek(self):
         if self.is_empty():
             print('Nothing to see here!')
+        else:
+            return self.head.get_value()
     
     def get_size(self):
         return self.size
@@ -67,6 +69,8 @@ print(s.head.get_value(), s.tail.get_value(), s.get_size())
 s.push(55)
 
 print(s.head.get_value(), s.tail.get_value(), s.get_size())
+
+print(s.peek())
 
 s.pop()
 
